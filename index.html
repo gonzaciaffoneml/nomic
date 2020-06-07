@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- Metas SEO-->
+        <meta name="description" content="We build open source software to unlock developer productivity in the Ethereum ecosystem, accelerating the growth of an alternative financial system"/>
+        <meta name="author" content="Nomic Labs"/>
+        <title>Nomic Labs</title>
+        <!-- Favicon-->
+        <link rel="shortcut icon" type="image/ico" href="img/favicon.png"/>
+        <!-- Bootstrap-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <!-- Custom Style-->
+        <link href="css/style.css" rel="stylesheet"/>
+        <!-- Animate CSS-->
+        <link href="css/min/animate.min.css" rel="stylesheet"/>
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries--><!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    <body id="home-page" onload="init();">
+        <div class="body-container">
+            <main>
+                <div class="container">
+                    <div class="row flex">
+                        <!-- animation -->
+                        <div class="col-sm-6 relative">
+                            <div id="hero-container" class="visible-xs">
+                                <img src="img/hero-desktop.svg" alt="">
+                            </div>
+                            <div id="animation_container" class="hidden-xs">
+                                <canvas id="canvas"></canvas>
+                                <div id="dom_overlay_container"></div>
+                            </div>
+                        </div>
+                        <!-- /animation -->
+                        <!-- info -->
+                        <div class="col-sm-6 vcenter">
+                            <div class="info-container">
+                                <h1 class="logo">
+                                    <img src="img/nomic-solid-horizontal-reverse.svg" alt="Nomic Labs Logo" class="img-responsive hidden-xs">
+                                    <img src="img/nomic-solid-horizontal-reverse.svg" alt="Nomic Labs Logo" class="img-responsive visible-xs">
+                                </h1>
+                                <p>
+                                    We build open source software to unlock developer productivity in the Ethereum ecosystem, accelerating the growth of an alternative financial system.
+                                </p>
+                                <div class="visible-xs">
+                                    <img src="img/mobile-miscelanea.svg" alt="" class="img-responsive misc">
+                                </div>
+                                <div id="text-transition">
+                                    <div id="jobs">
+                                        <h4 class="section-subtitle">jobs</h4>
+                                        <div><a target="_blank" href="https://www.notion.so/nomiclabs/Systems-Programming-Engineer-efc1c3006d3f4dd29121489377b19e9e">Systems Programming Engineer</a></div>
+                                    </div>
+                                    <div id="contact">
+                                        <h4 class="section-subtitle">contact</h4>
+                                        <a href="mailto:hello@nomiclabs.io">hello@nomiclabs.io</a>
+                                    </div>
+                                    <div id="social">
+                                        <ul>
+                                            <li><a href="https://medium.com/nomic-labs-blog"><img src="img/logo-social-medium.svg" alt="Medium" class="img-responsive"></a></li>
+                                            <li class="social-github"><a href="https://github.com/nomiclabs"><img src="img/logo-social-github.svg" alt="GitHub" class="img-responsive"></a></li>
+                                            <li><a href="https://twitter.com/nomiclabs"><img src="img/logo-social-twitter.svg" alt="Twitter" class="img-responsive"></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /info -->
+                    </div>
+                </div>
+            </main>
+            <footer class="footer">
+                <img src="img/mobile-footer.svg" alt="" class="footer-misc">
+            </footer>
+
+
+            <div id="float-modal">
+                <div class="float-modal-header">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6 col-sm-offset-6">
+                                <h6 class="float-modal-title">
+                                    <button id="float-modal-button" type="button" name="open">
+                                        <span><img src="img/btn-arrow.svg" alt=""></span> <img src="img/logo-buidler.svg" alt="">
+                                    </button>
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="float-modal-body" id="float-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                            </div>
+                            <div class="col-sm-6 sm-block">
+                                <p>Buidler is a task runner for Ethereum smart contract developers. It works with all developer tools, rather than replace andy specific ones.</p>
+                                <a href="#" target="_blank" class="button-primary"><img src="img/btn-buidler.svg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <figure id="skeleton-container">
+                <img class="skeleton" id="skeleton" src="img/hero-desktop-lines.svg" alt="">
+            </figure>
+
+            <div class="float-modal-img">
+                <img src="img/mascota-ella.svg" alt="">
+                <img src="img/mascota-el.svg" alt="">
+            </div>
+        </div>
+        <!-- SCRIPTS-->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117668706-1"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-117668706-1');
+        </script>
+        <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+        <script src="js/min/nomic-animate5.min.js?1522844886003"></script>
+        <script>
+            var canvas, stage, exportRoot, anim_container, dom_overlay_container, fnStartAnimation;
+            function init() {
+
+                var floatModalDiv = document.getElementById("float-modal");
+                var textTransition = document.getElementById("text-transition");
+                var overflowLines = document.getElementById("overflow-lines");
+                var skeleton = document.getElementById("skeleton-container");
+                var skeleton2 = document.getElementById("skeleton");
+
+                function classToggle() {
+                    floatModalDiv.classList.toggle('open');
+                    textTransition.classList.toggle('open');
+                    skeleton.classList.toggle('open');
+
+                    setTimeout(function() {
+                        //$("#skeleton-container").animate({height: '100%'}, "fast")
+
+                    }, 800);
+
+
+                }
+              classToggle()
+                document.querySelector('#float-modal-button').addEventListener('click', classToggle);
+
+                // We don't show the animation on mobile
+                if (window.innerWidth < 771) {
+                    return
+                }
+
+            	canvas = document.getElementById("canvas");
+            	anim_container = document.getElementById("animation_container");
+            	dom_overlay_container = document.getElementById("dom_overlay_container");
+            	var comp=AdobeAn.getComposition("EDC10EC545A74B1FA73F759BE900CC8C");
+            	var lib=comp.getLibrary();
+            	handleComplete({},comp);
+
+            }
+            function handleComplete(evt,comp) {
+            	//This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+            	var lib=comp.getLibrary();
+            	var ss=comp.getSpriteSheet();
+            	exportRoot = new lib.nomicanimate7();
+            	stage = new lib.Stage(canvas);
+            	//Registers the "tick" event listener.
+            	fnStartAnimation = function() {
+            		stage.addChild(exportRoot);
+            		createjs.Ticker.setFPS(lib.properties.fps);
+            		createjs.Ticker.addEventListener("tick", stage);
+            	}
+            	//Code to support hidpi screens and responsive scaling.
+            	function makeResponsive(isResp, respDim, isScale, scaleType) {
+            		var lastW, lastH, lastS=1;
+            		window.addEventListener('resize', resizeCanvas);
+            		resizeCanvas();
+            		function resizeCanvas() {
+            			var w = lib.properties.width, h = lib.properties.height;
+            			var iw = window.innerWidth, ih=window.innerHeight;
+            			var pRatio = window.devicePixelRatio || 1, xRatio=iw/w, yRatio=ih/h, sRatio=1;
+            			if(isResp) {
+            				if((respDim=='width'&&lastW==iw) || (respDim=='height'&&lastH==ih)) {
+            					sRatio = lastS;
+            				}
+            				else if(!isScale) {
+            					if(iw<w || ih<h)
+            						sRatio = Math.min(xRatio, yRatio);
+            				}
+            				else if(scaleType==1) {
+            					sRatio = Math.min(xRatio, yRatio);
+            				}
+            				else if(scaleType==2) {
+            					sRatio = Math.max(xRatio, yRatio);
+            				}
+            			}
+            			canvas.width = w*pRatio*sRatio;
+            			canvas.height = h*pRatio*sRatio;
+            			canvas.style.width = dom_overlay_container.style.width = anim_container.style.width =  w*sRatio+'px';
+            			canvas.style.height = anim_container.style.height = dom_overlay_container.style.height = h*sRatio+'px';
+            			stage.scaleX = pRatio*sRatio;
+            			stage.scaleY = pRatio*sRatio;
+            			lastW = iw; lastH = ih; lastS = sRatio;
+            			stage.tickOnUpdate = false;
+            			stage.update();
+            			stage.tickOnUpdate = true;
+            		}
+            	}
+            	makeResponsive(true,'both',false,1);
+            	AdobeAn.compositionLoaded(lib.properties.id);
+            	fnStartAnimation();
+            }
+        </script>
+        <script>
+            /*var canvas = document.getElementById('dom_overlay_container');
+            var mask = document.querySelector('[data-js=mask-hover]');
+            var maskLeftPosition = canvas.offsetLeft - 317;
+            var maskTopPosition = canvas.offsetTop -400;
+            var maskWidth = canvas.offsetWidth;
+            mask.setAttribute('style', `left: ${maskLeftPosition}px !important; top: ${maskTopPosition}px !important; width: ${maskWidth}px`)*/
+
+            /*var skeleton = document.getElementById('skeleton');
+            var canvas = document.getElementById('canvas');
+            var canvasSize = canvas.getBoundingClientRect();
+            skeleton.style.left = String(canvasSize.x) + 'px';
+            skeleton.style.top = String(canvasSize.y) + 'px';
+
+            console.log(canvasSize)*/
+
+            /*xOperation = canvasSize <= xNumber ? (canvasSize.x - xNumber) : (canvasSize.x + xNumber);
+            yOperation = canvasSize <= yNumber ? (canvasSize.y - yNumber) : (canvasSize.y + yNumber);
+
+            skeleton.setAttribute('style', `transform: translateX(${xOperation}%) translateY(${yOperation}%) !important`)*/
+
+            // console.log(clip.getBoundingClientRect())
+           //  mask.setAttribute('y', (clip.getBoundingClientRect().y) - (clip.getBoundingClientRect().height / 2))
+
+            var canvas = $('#canvas');
+
+            var skeleton = document.getElementById('skeleton');
+            var floatBody = document.getElementById('float-body');
+            console.log(canvas.offset())
+            skeleton.style.top = canvas.position().top;
+            skeleton.style.left = canvas.offset().left;
+
+            console.log(floatBody.getBoundingClientRect())
+
+            var a = 350;
+
+
+            // skeleton.setAttribute('style', `clip-path: polygon(0 ${floatBody.getBoundingClientRect().height}px, 100% ${floatBody.getBoundingClientRect().height}px, 100% 100%, 0% 100%);`)
+        </script>
+    </body>
+</html>

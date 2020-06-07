@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="7462 1873 315.8 142.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+      }
+
+      .cls-3 {
+        fill: url(#linear-gradient-3);
+      }
+
+      .cls-4 {
+        fill: none;
+        stroke: #999;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-5 {
+        fill: url(#linear-gradient-4);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.001" y1="0.501" x2="1" y2="0.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#9c5c7d"/>
+      <stop offset="0.178" stop-color="#a7687f"/>
+      <stop offset="0.5" stop-color="#c38885"/>
+      <stop offset="0.927" stop-color="#f0bb8d"/>
+      <stop offset="1" stop-color="#f8c58f"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.501" y1="1" x2="0.501" y2="-0.001" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2e99e6"/>
+      <stop offset="0.235" stop-color="#318bcf"/>
+      <stop offset="0.725" stop-color="#376695"/>
+      <stop offset="1" stop-color="#3b5072"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.501" y1="1" x2="0.501" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2d4570"/>
+      <stop offset="1" stop-color="#9c5c7d"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0.329" stop-color="#999"/>
+      <stop offset="0.978" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g id="mobile-miscelanea" transform="translate(7462.5 1873.6)">
+    <path id="Path_22667" data-name="Path 22667" class="cls-1" d="M28.5,85.6l-14,8.1,28,16.2,14-8Z"/>
+    <path id="Path_22668" data-name="Path 22668" class="cls-2" d="M42.5,109.9v16.2l14-8.1V101.9Z"/>
+    <path id="Path_22669" data-name="Path 22669" class="cls-3" d="M14.5,93.7v16.2l28,16.2V109.9Z"/>
+    <path id="Path_22671" data-name="Path 22671" class="cls-4" d="M42.5,45.1l42,24.2-42,24.2"/>
+    <line id="Line_386" data-name="Line 386" class="cls-4" y2="40.4" transform="translate(84.5 77.4)"/>
+    <path id="Path_22713" data-name="Path 22713" class="cls-5" d="M70.5,142.5,42.3,126.6l-14.1-8.3L.1,102,0,68.5,29,85.2v24.5H28V85.8L1,70.2l.1,31.2,27.7,16,14,8.3,27.7,15.7L315.3,0l.5.9Z" transform="translate(-0.5 -0.6)"/>
+  </g>
+</svg>
